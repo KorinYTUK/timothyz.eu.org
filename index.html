@@ -13,13 +13,22 @@
             animation: gradientAnimation 30s linear infinite;
             font-family: Arial, sans-serif;
         }
-
-        @keyframes gradientAnimation {
-            0% {
-                background-position: 0% 0%;
+        
+        .bg:before {
+                content: "";
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                background-size: 100% 100%;
+                animation: bgAnim 30s linear infinite;
+        }
+        
+        @keyframes bgAnim{
+            0%{
+                transform: rotate(0deg)
             }
-            100% {
-                background-position: 100% 100%;
+            100%{
+                transform: rotate(360deg)
             }
         }
 
@@ -43,6 +52,7 @@
     </script>
 </head>
 <body>
+    <div class="bg"></div>
     <div class="container">
         <h1>About Me - Timothy</h1>
         <p>contact me: <a href="mailto:info@timothyz.eu.org">info@timothyz.eu.org</a></p>
