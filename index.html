@@ -4,11 +4,25 @@
     <title>About Me - Timothy</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #000000, #222222); /* Replace with your preferred background colors */
-            font-family: Arial, sans-serif;
-            color: #ffffff;
             margin: 0;
             padding: 0;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #000000, #222222);
+            background-size: 100% 200%;
+            animation: gradientAnimation 10s linear infinite;
+            font-family: Arial, sans-serif;
+        }
+        
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 0% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
         }
         
         .container {
@@ -16,6 +30,9 @@
             margin: 0 auto;
             padding: 20px;
             text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: #ffffff;
         }
     </style>
 </head>
