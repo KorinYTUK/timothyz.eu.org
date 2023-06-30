@@ -32,6 +32,12 @@ nav h1 {
   font-weight: bold;
 }
 
+hr {
+  border: 10px solid lightgray;
+  border-radius: 2px;
+  width: 65%;
+}
+
 #recipe .items {
   font-style: italic;
 }
