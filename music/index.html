@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <meta property="og:title" content="TimothyZ">
-  <meta property="og:description" content="Check out my music!">
-  <meta property="og:url" content="https://timothyz.eu.org/">
+  <meta property="og:title" content="TimothyZ Music">
+  <meta property="og:description" content="Music By TimothyZ">
+  <meta property="og:url" content="https://timothyz.eu.org/music/">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -13,72 +13,30 @@
 </head>
 
 <body>
-  <br><br><br>
   <div class="container">
-    <h1 class="logo">TimothyZ</h1>
-    <header>
-      <a href="music/" class="nav-link">My Music</a>
-    </header>
+    <div class="logo">
+      <h1 class="logo-text">Music By TimothyZ!</h1>
+      <a href="../" class="nav-link">Home</a>
+    </div>
     <div class="content">
-      <div class="about-me">
-        <h2>About Me</h2>
-
-        <section>
-          <h3>Language & Timezone</h3>
-          <p>
-            I am from Europe (GMT+1) and fluent in multiple languages. I can communicate effectively in English
-            (including British, Canadian, etc.) and Polish.
-          </p>
-        </section>
-
-        <section>
-          <h3>Programming Languages</h3>
-          <p>
-            With 5 years of experience in game development, I have expertise in the following programming languages:
-          </p>
-          <ul>
-            <li>C#</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C++</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Music</h3>
-          <p>
-            Alongside game development, I have a passion for composing music as a creative outlet. Check out my music
-            collection to experience my musical compositions.
-          </p>
-        </section>
-
-        <section>
-          <h3>Contact</h3>
-          <p>
-            Feel free to reach out to me for inquiries, collaboration opportunities, or any other questions you may
-            have.
-            You can contact me through the following channels:
-          </p>
-          <ul>
-            <li>Email: info@timothyz.eu.org</li>
-            <li>Phone: </li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Other</h3>
-          <p>
-            In addition to my game development and music pursuits, I am passionate about continuous learning and
-            exploring new technologies to expand my skillset.
-          </p>
-        </section>
+      <h2 class="subtitle">CC BY Licence</h2>
+      <div class="audio-player">
+        <h3 class="track-title">Encoded Reflections</h3>
+        <audio controls>
+          <source src="encoded_reflections.mp3" type="audio/mp3">
+        </audio>
+        <h3 class="track-title">Digital Serenity</h3>
+        <audio controls>
+          <source src="digital_serenity.mp3" type="audio/mp3">
+        </audio>
       </div>
+      <!--All right songs-->
+      <h2 class="subtitle">All Rights Reserved Licence</h2>
     </div>
 
-    <footer>
-      <p>&copy; TimothyZ 2023</p>
-    </footer>
+    <div class="footer">
+      <h2 class="footer-text">&copy; TimothyZ 2023</h2>
+    </div>
   </div>
 </body>
 
@@ -99,44 +57,55 @@
   }
 
   .container {
-    width: 75%;
+    width: 400px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-    max-height: 100vh;
-  }
-
-  .container::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .container::-webkit-scrollbar-thumb {
-    background-color: #9AAEBB;
-    border-radius: 3px;
-  }
-
-  .container::-webkit-scrollbar-track {
-    background-color: transparent;
   }
 
   .logo {
     text-align: center;
+    background: #374955;
     padding: 30px 0;
     font-size: 24px;
+    color: #ffffff;
+  }
+
+  .logo-text {
+    margin: 0;
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .subtitle {
+    margin-top: 0;
+    font-size: 18px;
     color: #374955;
   }
 
-  header {
+  .audio-player {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .track-title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #374955;
+  }
+
+  .footer {
     background-color: #374955;
     padding: 20px;
     text-align: center;
   }
 
-  footer {
-    background-color: #8DD4FC;
-    padding: 20px;
-    text-align: center;
+  .footer-text {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
   }
 
   .nav-link {
@@ -153,27 +122,6 @@
   .nav-link:hover {
     background-color: #9AAEBB;
     color: #374955;
-  }
-
-
-  .content {
-    padding: 30px;
-  }
-
-  .about-me {
-    margin-bottom: 30px;
-  }
-
-  h2 {
-    font-size: 20px;
-    color: #374955;
-    margin-top: 0;
-  }
-
-  p {
-    font-size: 16px;
-    color: #374955;
-    line-height: 1.5;
   }
 </style>
 
