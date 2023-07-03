@@ -1,3 +1,180 @@
+<!DOCTYPE html>
 <html>
-  <h1>work in progress...</h1>
+
+<head>
+  <meta property="og:title" content="TimothyZ">
+  <meta property="og:description" content="Check out my music!">
+  <meta property="og:url" content="https://timothyz.eu.org/">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TimothyZ</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <br><br><br>
+  <div class="container">
+    <h1 class="logo">TimothyZ</h1>
+    <header>
+      <a href="music/" class="nav-link">My Music</a>
+    </header>
+    <div class="content">
+      <div class="about-me">
+        <h2>About Me</h2>
+
+        <section>
+          <h3>Language & Timezone</h3>
+          <p>
+            I am from Europe (GMT+1) and fluent in multiple languages. I can communicate effectively in English
+            (including British, Canadian, etc.) and Polish.
+          </p>
+        </section>
+
+        <section>
+          <h3>Programming Languages</h3>
+          <p>
+            With 5 years of experience in game development, I have expertise in the following programming languages:
+          </p>
+          <ul>
+            <li>C#</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C++</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Music</h3>
+          <p>
+            Alongside game development, I have a passion for composing music as a creative outlet. Check out my music
+            collection to experience my musical compositions.
+          </p>
+        </section>
+
+        <section>
+          <h3>Contact</h3>
+          <p>
+            Feel free to reach out to me for inquiries, collaboration opportunities, or any other questions you may
+            have.
+            You can contact me through the following channels:
+          </p>
+          <ul>
+            <li>Email: info@timothyz.eu.org</li>
+            <li>Phone: </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Other</h3>
+          <p>
+            In addition to my game development and music pursuits, I am passionate about continuous learning and
+            exploring new technologies to expand my skillset.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; TimothyZ 2023</p>
+    </footer>
+  </div>
+</body>
+
+<style>
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #8DD4FC;
+  }
+
+  .container {
+    width: 75%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+
+  .container::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .container::-webkit-scrollbar-thumb {
+    background-color: #9AAEBB;
+    border-radius: 3px;
+  }
+
+  .container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .logo {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 24px;
+    color: #374955;
+  }
+
+  header {
+    background-color: #374955;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer {
+    background-color: #8DD4FC;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .nav-link:hover {
+    background-color: #9AAEBB;
+    color: #374955;
+  }
+
+
+  .content {
+    padding: 30px;
+  }
+
+  .about-me {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #374955;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 16px;
+    color: #374955;
+    line-height: 1.5;
+  }
+</style>
+
 </html>
