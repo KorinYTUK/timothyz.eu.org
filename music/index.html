@@ -10,27 +10,108 @@
   <meta name="viewport" content="width=device-width">
   <title>TimothyZ</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-attachment: local;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-size: 250%;
+      background: rgb(96, 89, 213);
+      background: linear-gradient(28deg, rgba(96, 89, 213, 1) 0%, rgba(33, 173, 244, 1) 32%, rgba(96, 255, 164, 1) 100%);
+      color: #ffffff;
+    }
+
+    .container {
+      width: 55%;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+    }
+
+    .logo {
+      text-align: center;
+      background: #374955;
+      padding: 30px 0;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .logo-text {
+      margin: 0;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .subtitle {
+      margin-top: 0;
+      font-size: 18px;
+      color: #ffffff;
+    }
+
+    .audio-player {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .track-title {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .footer {
+      background-color: #374955;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-text {
+      margin: 0;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .nav-link {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+      padding: 10px;
+      border: 2px solid #ffffff;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-link:hover {
+      background-color: #9AAEBB;
+      color: #374955;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
-    <div>
-      <h1>Music By TimothyZ!</h1>
+    <div class="logo">
+      <h1 class="logo-text">Music By TimothyZ!</h1>
       <a href="../" class="nav-link">Home</a>
     </div>
-    <div>
-      <h2>CC BY Licence</h2>
+    <div class="content">
+      <h2 class="subtitle">CC BY Licence</h2>
       <div class="audio-player">
-        <!--
-        <h3 class="track-title">Encoded Reflections</h3>
-        <audio controls>
-          <source src="encoded_reflections.mp3" type="audio/mp3">
-        </audio>
-        <h3 class="track-title">Digital Serenity</h3>
-        <audio controls>
-          <source src="digital_serenity.mp3" type="audio/mp3">
-        </audio>
-        -->
         <h3 class="track-title">Deep Down (Nauticadence)</h3>
         <audio controls>
           <source src="Deep Down (Nauticadence).mp3">
@@ -48,106 +129,13 @@
           <source src="TO_WAR.mp3" type="audio/mp3">
         </audio>
       </div>
-      <!--All right songs-->
-      <h2">All Rights Reserved Licence</h2>
+      <h2 class="subtitle">All Rights Reserved Licence</h2>
     </div>
 
-    <div>
+    <div class="footer">
       <h2 class="footer-text">&copy; TimothyZ 2023</h2>
     </div>
   </div>
 </body>
-
-<style>
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    background-attachment: local;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-            background-size: 250%;
-            background: rgb(96,89,213);
-background: linear-gradient(28deg, rgba(96,89,213,1) 0%, rgba(33,173,244,1) 32%, rgba(96,255,164,1) 100%);
-    color: #ffffff;
-  }
-
-  .container {
-            width: 55%;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            color: #ffffff;
-  }
-
-  .logo {
-    text-align: center;
-    background: #374955;
-    padding: 30px 0;
-    font-size: 24px;
-    color: #ffffff;
-  }
-
-  .logo-text {
-    margin: 0;
-  }
-
-  .content {
-    padding: 30px;
-  }
-
-  .subtitle {
-    margin-top: 0;
-    font-size: 18px;
-    color: #ffffff;
-  }
-
-  .audio-player {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .track-title {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #ffffff;
-  }
-
-  .footer {
-    background-color: #374955;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .footer-text {
-    margin: 0;
-    font-size: 16px;
-    color: #ffffff;
-  }
-
-  .nav-link {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 10px;
-    border: 2px solid #ffffff;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  .nav-link:hover {
-    background-color: #9AAEBB;
-    color: #374955;
-  }
-</style>
 
 </html>
