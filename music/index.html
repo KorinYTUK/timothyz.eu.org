@@ -19,25 +19,52 @@
     }
 
     body {
-      background-attachment: local;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-color: #000;
+      color: #fff;
       font-family: Arial, sans-serif;
-      background-size: 250%;
-      background: rgb(96, 89, 213);
-      background: linear-gradient(28deg, rgba(96, 89, 213, 1) 0%, rgba(33, 173, 244, 1) 32%, rgba(96, 255, 164, 1) 100%);
-      color: #ffffff;
     }
 
     .container {
-      width: 55%;
+      max-width: 800px;
       margin: 0 auto;
       padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.5);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      color: #ffffff;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px #ff00ff;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #ff00ff;
+      text-shadow: 2px 2px #000;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff00ff;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
     }
 
     .logo {
@@ -50,16 +77,6 @@
 
     .logo-text {
       margin: 0;
-    }
-
-    .content {
-      padding: 30px;
-    }
-
-    .subtitle {
-      margin-top: 0;
-      font-size: 18px;
-      color: #ffffff;
     }
 
     .audio-player {
@@ -109,29 +126,25 @@
       <h1 class="logo-text">Music By TimothyZ!</h1>
       <a href="../" class="nav-link">Home</a>
     </div>
-    <div class="content">
-      <h2 class="subtitle">CC BY Licence</h2>
-      <div class="audio-player">
-        <h3 class="track-title">Deep Down (Nauticadence)</h3>
-        <audio controls>
-          <source src="Deep Down (Nauticadence).mp3">
-        </audio>
-        <h3 class="track-title">Melodies of the Enchanted Grove</h3>
-        <audio controls>
-          <source src="melodies_of_the_enchanted_grove.mp3" type="audio/mp3">
-        </audio>
-        <h3 class="track-title">Melodies of the Enchanted Grove (Evil)</h3>
-        <audio controls>
-          <source src="melodies_of_the_enchanted_grove_corrupted.mp3" type="audio/mp3">
-        </audio>
-        <h3 class="track-title">TO WAR (Boss Fight)</h3>
-        <audio controls>
-          <source src="TO_WAR.mp3" type="audio/mp3">
-        </audio>
-      </div>
-      <h2 class="subtitle">All Rights Reserved Licence</h2>
+    <div class="audio-player">
+      <h2 class="track-title">CC BY Licence</h2>
+      <audio controls>
+        <source src="Deep Down (Nauticadence).mp3">
+      </audio>
+      <h3 class="track-title">Melodies of the Enchanted Grove</h3>
+      <audio controls>
+        <source src="melodies_of_the_enchanted_grove.mp3" type="audio/mp3">
+      </audio>
+      <h3 class="track-title">Melodies of the Enchanted Grove (Evil)</h3>
+      <audio controls>
+        <source src="melodies_of_the_enchanted_grove_corrupted.mp3" type="audio/mp3">
+      </audio>
+      <h3 class="track-title">TO WAR (Boss Fight)</h3>
+      <audio controls>
+        <source src="TO_WAR.mp3" type="audio/mp3">
+      </audio>
     </div>
-
+    <h2>All Rights Reserved Licence</h2>
     <div class="footer">
       <h2 class="footer-text">&copy; TimothyZ 2023</h2>
     </div>
